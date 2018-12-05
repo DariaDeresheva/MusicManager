@@ -1,0 +1,46 @@
+﻿@model List<MusicManager.DataBase.Entities.Album>
+
+@{
+	ViewBag.Title = "Library";
+}
+
+<div class="row">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li>@Html.ActionLink("Home", "Index", "Home")</li>
+			<li class="active">Library</li>
+		</ol>
+	</div>
+</div>
+
+<h4 class="text-center">
+	You have <strong>@Model.Count()</strong> albums in the Library at the moment! @Html.ActionLink(">>Add More<<", "Add", "Create")
+</h4>
+
+<div class="extra-margin row">
+	@foreach (var item in Model)
+	{
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="album container">
+				@if (item.AlbumCover != null)
+				{
+					<img class="img-responsive pic" alt="Cover" src="~/Content/img/covers/@item.AlbumCover" />
+				}
+				else
+				{
+					<img class="img-responsive pic" alt="Cover" src="/Content/img/covers/no_cover.jpg" />
+				}
+				<div class="caption">
+					<h4>@item.AlbumName</h4>
+					<h5>@item.AlbumYear</h5>
+					<div id="@item.AlbumId"></div>
+					<span class="btn btn-default js-album-details" data-id="@item.AlbumId">Details</span>
+					@Html.ActionLink("View full Album", "ViewAlbum", "Library", new { id = @item.AlbumId }, new { @class = "btn btn-default" })
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+
+

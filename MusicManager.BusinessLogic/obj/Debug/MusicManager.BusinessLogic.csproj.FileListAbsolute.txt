@@ -1,0 +1,17 @@
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.BusinessLogic.dll.config
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.BusinessLogic.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.BusinessLogic.pdb
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.DataBase.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\Ninject.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.DataBase.pdb
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\MusicManager.DataBase.dll.config
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\bin\Debug\Ninject.xml
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\obj\Debug\MusicManager.BusinessLogic.dll
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\obj\Debug\MusicManager.BusinessLogic.pdb
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\obj\Debug\MusicManager.BusinessLogic.csprojAssemblyReference.cache
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\obj\Debug\MusicManager.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Projects\Daria\MusicManager\MusicManager.BusinessLogic\obj\Debug\MusicManager.BusinessLogic.csproj.CopyComplete

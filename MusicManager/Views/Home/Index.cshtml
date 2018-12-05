@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Music Manager - Home";
+}
+
+<div class="carousel_container menu-carousel">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img alt="Slide1" class="img-rounded" src="~/Content/img/carousel_slide1.jpg">
+            <p>@Html.ActionLink("View Library", "ViewLibrary", "Library", null, new { @class = "btn btn-lg btn-default" })</p>
+        </div>
+        <div class="item">
+            <img alt="Slide2" class="img-rounded" src="~/Content/img/carousel_slide2.jpg">
+            <p>@Html.ActionLink("Add Music", "Add", "Create", null, new { @class = "btn btn-lg btn-default" }) </p>
+        </div>
+        <div class="item">
+            <img alt="Slide3" class="img-rounded" src="~/Content/img/carousel_slide3.png">
+            <p>@Html.ActionLink("Search!", "Search", "Home", null, new { @class = "btn btn-lg btn-default" }) </p>
+        </div>
+        <div class="item">
+            <img alt="Slide4" class="img-rounded" src="~/Content/img/carousel_slide4.jpg">
+            <p>@Html.ActionLink("View Best Albums", "Search", null, "Home", new { @class="btn btn-lg btn-default"})</p>
+        </div>
+        <div class="item">
+            <img alt="Slide5" class="img-rounded" src="~/Content/img/carousel_slide5.jpg">
+            <p>@Html.ActionLink("View Instruction", "About", null, "Home", new { @class = "btn btn-lg btn-default" })</p>
+        </div>
+    </div>   
+</div>

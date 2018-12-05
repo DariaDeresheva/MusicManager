@@ -1,0 +1,25 @@
+﻿.small_rating {
+	max-width: rem(30);
+}
+
+.album {
+	position: relative;
+	width: 100%;
+	padding: 0 !important;
+	-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+.artist-name {
+	&:after {
+		content: "\007c";
+		padding: 0 rem(5px) 0 rem(5px);
+	}
+
+	&:last-of-type {
+		&:after {
+			content: "";
+		}
+	}
+}

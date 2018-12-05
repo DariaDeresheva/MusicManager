@@ -1,0 +1,39 @@
+﻿.caption {
+	text-align: left;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	-webkit-transform: translate(100px);
+	-moz-transform: translate(100px);
+	-o-transform: translate(100px);
+	transform: translateY(100px);
+	padding-left: rem(10px);
+	opacity: 0;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.album {
+	overflow: hidden;
+	margin-bottom: rem(10px);
+
+	&:hover {
+		.caption {
+			opacity: 1;
+			height: auto;
+			-webkit-transform: translateY(0);
+			-moz-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+		}
+	}
+}
+
+.btn-default {
+	background-color: $primary-colour;
+}

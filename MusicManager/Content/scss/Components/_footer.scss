@@ -1,0 +1,18 @@
+﻿footer {
+	background: $primary-colour;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: rem(40px);
+	width: 100%;
+}
+
+.copyright {
+	float: right;
+	padding: 0;
+	margin-right: rem(10px);
+}
+
+.about_link {
+	float: left;
+}

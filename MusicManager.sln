@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicManager", "MusicManager\MusicManager.csproj", "{59B42A43-52C9-4633-BFB3-1E02EC61747B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicManager.Tests", "MusicManager.Tests\MusicManager.Tests.csproj", "{692819AF-8785-4A9A-90E7-B574D2283D80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicManager.BusinessLogic", "MusicManager.BusinessLogic\MusicManager.BusinessLogic.csproj", "{CDD28E76-DDFB-46E4-AA1E-A79B3CEA7B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicManager.DataBase", "MusicManager.DataBase\MusicManager.DataBase.csproj", "{BD289566-9D79-407E-A23B-29E01BDC6DF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59B42A43-52C9-4633-BFB3-1E02EC61747B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B42A43-52C9-4633-BFB3-1E02EC61747B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B42A43-52C9-4633-BFB3-1E02EC61747B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B42A43-52C9-4633-BFB3-1E02EC61747B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692819AF-8785-4A9A-90E7-B574D2283D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692819AF-8785-4A9A-90E7-B574D2283D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692819AF-8785-4A9A-90E7-B574D2283D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692819AF-8785-4A9A-90E7-B574D2283D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD28E76-DDFB-46E4-AA1E-A79B3CEA7B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD28E76-DDFB-46E4-AA1E-A79B3CEA7B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD28E76-DDFB-46E4-AA1E-A79B3CEA7B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD28E76-DDFB-46E4-AA1E-A79B3CEA7B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD289566-9D79-407E-A23B-29E01BDC6DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD289566-9D79-407E-A23B-29E01BDC6DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD289566-9D79-407E-A23B-29E01BDC6DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD289566-9D79-407E-A23B-29E01BDC6DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ncl-s-tfs02:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MusicManager.Tests\\MusicManager.Tests.csproj
+		SccProjectName1 = MusicManager.Tests
+		SccLocalPath1 = MusicManager.Tests
+		SccProjectUniqueName2 = MusicManager\\MusicManager.csproj
+		SccProjectName2 = MusicManager
+		SccLocalPath2 = MusicManager
+		SccProjectUniqueName3 = MusicManager.BusinessLogic\\MusicManager.BusinessLogic.csproj
+		SccProjectName3 = MusicManager.BusinessLogic
+		SccLocalPath3 = MusicManager.BusinessLogic
+		SccProjectUniqueName4 = MusicManager.DataBase\\MusicManager.DataBase.csproj
+		SccProjectName4 = MusicManager.DataBase
+		SccLocalPath4 = MusicManager.DataBase
+	EndGlobalSection
+EndGlobal

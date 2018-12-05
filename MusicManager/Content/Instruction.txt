@@ -1,0 +1,22 @@
+Music Manager help file
+
+Music Manager allows to add, view and search your favourite music.
+
+"Home" button will bring you back to the home screen you've started with.
+
+"Library" or "View Library" buttons both bring you to the Library screen, where all albums are listed. It will display a total number of albums, their album art (if any), and the ability to add more albums via ">>Add More<<". 
+To see the details of the album, hover your mouse over it. Clicking "View Full Album" will reveal the details of the album, including the name of the album, artist(s) (updated automatically, once you add individual songs), the year of the album's release, and the rating. You can also see the album cover (if any), and the song list below it, including individual song's track number, name, genre, artist, and rating.
+
+To add a song to an album, click "Edit". This brings up a screen, where you can add a song. Fill in all the fields, and press "Create". This brings back the album screen, together with a newly added song. 
+
+To edit the album or add, edit, or delete any song within it, click "Edit" on the album screen you would like to change. You can edit the album details, as well as song details. To edit the song details press "Edit" near the song you would like to edit. Once any changes to the track are made, press "Save". If no edits are needed, press "Back to Album Edit" to return to the previous screen. To save all changes, press "Save" on the Album edit screen. To add a song fill in all the fields at the bottom of the page, and press "Create". This brings back the album screen, together with a newly added song. This will also automatically save any changes made to the album. To delete a song, press "Delete" near it. This will bring you back to the album screen and save any changes made. To delete an album press "Delete" near the album info. This will bring you back to the library screen.
+
+"Add" or "Add Music" allows you to add new albums to the library.
+Include name of the ablum in the AlbumName (optional).
+Provide a rating to the album in AlbumRating (mandatory).
+Provide a year the album was released in AlbumYear (mandatory).
+You also have an option to upload the album cover by pressing "Choose File" in AlbumCover.
+
+Once a new album is added, you will be returned to the updated library screen.
+
+"Advanced Search" or "Search!" buttons both bring you to the search menu. You can search by name, within albums artists or songs, by rating, year or genre. If searching by name, please tick the place you would like to search in: InAlbum, InArtist, InSong, or any combination of those. If searching by rating, year or genre, the ticks are not requried. This gives the album in which the search criteria are satisifed. From there you can view the details of the album.

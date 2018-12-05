@@ -1,0 +1,43 @@
+﻿@model List<MusicManager.DataBase.Entities.Album>
+
+@{
+	ViewBag.Title = "SearchResult";
+}
+<div class="search">
+	<h2>Search Results:@Model.Count </h2>
+
+	@if (Model.Count == 0)
+	{
+		<div class="bad_search">
+			<h4>Sorry, nothing was found on your query!</h4>
+			<img class="img-responsive" src="/Content/img/sad.jpg" alt="Sad Picture" />
+		</div>
+	}
+	else
+	{
+		<div class="row">
+			@foreach (var item in Model)
+			{
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="container">
+						@if (item.AlbumCover != null)
+						{
+							<img id="pic" class="img-responsive" alt="Cover" src="~/Content/img/covers/@item.AlbumCover" />
+						}
+						else
+						{
+							<img id="pic" class="img-responsive" alt="Cover" src="/Content/img/covers/no_cover.jpg" />
+						}
+						<div id="caption">
+							<h4>@item.AlbumName</h4>
+							<h5>@item.AlbumYear</h5>
+							<a class="btn btn-default" href="#">Details</a>
+							@Html.ActionLink("View full Album", "ViewAlbum", "Library", new { id = @item.AlbumId }, new { @class = "btn btn-default" })
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	}
+
+</div>

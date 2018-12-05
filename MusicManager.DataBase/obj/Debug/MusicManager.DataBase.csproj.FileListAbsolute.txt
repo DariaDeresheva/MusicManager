@@ -1,0 +1,15 @@
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\MusicManager.DataBase.dll.config
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\MusicManager.DataBase.dll
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\MusicManager.DataBase.pdb
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\EntityFramework.dll
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\EntityFramework.xml
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.dll
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.pdb
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.Migrations.InitialCreate.resources
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.csproj.GenerateResource.Cache
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.Migrations.DeleteFileInfoAndCascade.resources
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.csprojAssemblyReference.cache
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.csproj.CoreCompileInputs.cache
+C:\Projects\Daria\MusicManager\MusicManager.DataBase\obj\Debug\MusicManager.DataBase.csproj.CopyComplete

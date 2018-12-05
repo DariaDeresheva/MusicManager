@@ -1,0 +1,29 @@
+﻿.row {
+    margin: 0;
+}
+
+/* unvisited link */
+a:link {
+    color: $font-colour-dark;
+}
+
+/* visited link */
+a:visited {
+    color: $font-colour-dark;
+}
+
+/* mouse over link */
+a:hover {
+    color: $font-colour-neutral;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: $font-colour-neutral;
+    text-decoration: none;
+}
+
+.navbar {
+    margin: 0;
+}

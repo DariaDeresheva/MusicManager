@@ -1,0 +1,52 @@
+﻿@model MusicManager.Models.FullAlbum
+
+@using (Html.BeginForm("CreateSong", null))
+{
+	@Html.AntiForgeryToken()
+	<div class="forma">
+		<h4>Add a song</h4>
+		<div class="form-horizontal">
+			@Html.ValidationSummary(true, "", new {@class = "text-danger"})
+			<div class="form-group">
+				@Html.LabelFor(model => model.NewSong.SongName, htmlAttributes: new {@class = "control-label col-md-2"})
+				<div class="col-md-10">
+					@Html.EditorFor(model => model.NewSong.SongName, new {htmlAttributes = new {@class = "form-control"}})
+					@Html.ValidationMessageFor(model => model.NewSong.SongName, "", new {@class = "text-danger"})
+				</div>
+			</div>
+			<div class="form-group">
+				@Html.LabelFor(model => model.NewSong.SongRating, htmlAttributes: new {@class = "control-label col-md-2"})
+				<div class="col-md-10">
+					@Html.EditorFor(model => model.NewSong.SongRating, new {htmlAttributes = new {@class = "form-control"}})
+					@Html.ValidationMessageFor(model => model.NewSong.SongRating, "", new {@class = "text-danger"})
+				</div>
+			</div>
+			<div class="form-group">
+				@Html.LabelFor(model => model.NewSong.SongNumber, htmlAttributes: new {@class = "control-label col-md-2"})
+				<div class="col-md-10">
+					@Html.EditorFor(model => model.NewSong.SongNumber, new {htmlAttributes = new {@class = "form-control"}})
+					@Html.ValidationMessageFor(model => model.NewSong.SongNumber, "", new {@class = "text-danger"})
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-md-2">Artist</label>
+				<div class="col-md-10">
+					@Html.ListBox("artists", new MultiSelectList(ViewBag.Artists, "ArtistId", "ArtistName"))
+				</div>
+			</div>
+			<div class="form-group">
+				@Html.LabelFor(model => model.NewSong.Genre, htmlAttributes: new {@class = "control-label col-md-2"})
+				<div class="col-md-10">
+					@Html.DropDownListFor(model => model.NewSong.Genre.GenreId, new SelectList(ViewBag.Genres, "GenreId", "GenreName"))
+					@Html.ValidationMessageFor(model => model.NewSong.Genre, "", new {@class = "text-danger"})
+				</div>
+			</div>
+			@Html.HiddenFor(model => model.Album.AlbumId, Model.Album.AlbumId)
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Create" class="btn btn-default"/>
+				</div>
+			</div>
+		</div>
+	</div>
+}

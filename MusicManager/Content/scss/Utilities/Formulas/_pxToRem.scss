@@ -1,0 +1,14 @@
+﻿$browser-context: 16; // Default
+
+// Return em size value for any pixel value passed.
+@function rem($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return #{$pixels / $context}rem;
+}

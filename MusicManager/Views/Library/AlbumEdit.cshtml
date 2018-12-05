@@ -1,0 +1,125 @@
+﻿@model MusicManager.Models.FullAlbum
+
+<div class="row">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li>@Html.ActionLink("Home", "Index", "Home")</li>
+			<li>@Html.ActionLink("Library", "ViewLibrary", "Library")</li>
+			<li class="active">@Model.Album.AlbumName</li>
+		</ol>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		@if (Model.Album.AlbumCover != null)
+		{
+			<img class="img-responsive" alt="Cover" src="~/Content/img/covers/@Model.Album.AlbumCover">
+		}
+		else
+		{
+			<img class="img-responsive" alt="Cover" src="~/Content/img/covers/no_cover.jpg">
+		}
+	</div>
+	<div class="col-md-6">
+		@using (Html.BeginForm("EditResult", "Library", FormMethod.Post, new { enctype = "multipart/form-data"}))
+		{
+			@Html.AntiForgeryToken()
+			<div class="form-horizontal">
+				<hr />
+				@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+				@Html.HiddenFor(model => model.Album.AlbumId)
+				@Html.HiddenFor(model => model.Album.AlbumCover, Model.Album.AlbumCover)
+				<div class="form-group">
+					@Html.LabelFor(model => model.Album.AlbumName, htmlAttributes: new { @class = "control-label col-md-4" })
+					<div class="col-md-8">
+						@Html.EditorFor(model => model.Album.AlbumName, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Album.AlbumName, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<div class="form-group">
+					@Html.LabelFor(model => model.Album.AlbumRating, htmlAttributes: new { @class = "control-label col-md-4" })
+					<div class="col-md-8">
+						@Html.EditorFor(model => model.Album.AlbumRating, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Album.AlbumRating, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<div class="form-group">
+					@Html.LabelFor(model => model.Album.AlbumYear, htmlAttributes: new { @class = "control-label col-md-4" })
+					<div class="col-md-8">
+						@Html.EditorFor(model => model.Album.AlbumYear, new { htmlAttributes = new { @class = "form-control" } })
+						@Html.ValidationMessageFor(model => model.Album.AlbumYear, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<div class="form-group">
+					@Html.LabelFor(model => model.Album.AlbumCover, htmlAttributes: new { @class = "control-label col-md-4" })
+					<div class="col-md-8">
+						<div class="file_picker">
+							<input type="file" name="coverfile"/>
+						</div>
+						@Html.ValidationMessageFor(model => model.Album.AlbumCover, "", new { @class = "text-danger" })
+					</div>
+				</div>
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Save" class="btn btn-default" />
+				</div>
+			</div>
+		}
+		<div class="col-md-offset-2 col-md-10">
+			@using (Html.BeginForm("DeleteAlbum", null, new { id = Model.Album.AlbumId }))
+			{
+				@Html.AntiForgeryToken()
+				<input type="submit" value="Delete" class="btn btn-default" />
+			}
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	@Html.ActionLink("Back to Album View", "ViewAlbum", "Library", new { id = @Model.Album.AlbumId }, null)
+</div>
+<h3>Song List:</h3>
+<table class="table">
+	<thead>
+		<tr>
+			<th>N</th>
+			<th>Name</th>
+			<th>Genre</th>
+			<th>Artists</th>
+			<th>Raiting</th>
+		</tr>
+	</thead>
+	@foreach (var song in Model.Album.Songs)
+	{
+		<tr>
+			<td>@song.SongNumber</td>
+			<td>@song.SongName</td>
+			<td>@song.Genre.GenreName</td>
+			<td>
+				@foreach (var artist in song.Artists)
+				{
+					@artist.Artist.ArtistName
+					<span> </span>
+				}
+			</td>
+			<td>
+				@for (int i = 0; i < song.SongRating; i++)
+				{
+					<img class="small_rating" src="~/Content/img/star.png" title="@song.SongRating Stars!" />
+				}
+			</td>
+			<td>
+				<div class="btn btn-default">
+					@Html.ActionLink("Edit", "EditSongView", new { id = song.SongId }, null)
+				</div>
+			</td>
+			<td>
+				@using (Html.BeginForm("DeleteSong", null, new { songid = song.SongId, albumid = Model.Album.AlbumId }))
+				{
+					@Html.AntiForgeryToken()
+					<input type="submit" value="Delete" class="btn btn-default" />
+				}
+			</td>
+		</tr>
+	}
+</table>

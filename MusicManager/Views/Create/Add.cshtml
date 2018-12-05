@@ -1,0 +1,38 @@
+﻿
+@{
+	ViewBag.Title = "Add new";
+}
+
+<div class="row">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li>@Html.ActionLink("Home", "Index", "Home")</li>
+			<li>@Html.ActionLink("Library", "ViewLibrary", "Library")</li>
+			<li class="active">Add new</li>
+		</ol>
+	</div>
+</div>
+<div class="tabbable"> 
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#tab1" data-toggle="tab">Album</a></li>
+		<li><a href="#tab2" data-toggle="tab">Artist</a></li>
+		<li><a href="#tab3" data-toggle="tab">Genre</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab1">
+			@Html.Partial("View")
+		</div>
+		<div class="tab-pane" id="tab2">
+			@Html.Partial("AddArtist")
+		</div>
+		<div class="tab-pane" id="tab3">
+			@Html.Partial("AddGenre")
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
